@@ -1,0 +1,112 @@
+
+
+/*Not really sure what this does*/
+
+body {
+  /*affects the font of body*/
+  color: #0f2a36;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25em;
+  background: #fff url(https://cdn.glitch.com/0a7178a1-99b8-4958-8e46-50955a57f845%2Frando.jpg?v=1614215674360) repeat fixed center;
+	background-color: #e5c9ff;
+  background-size: auto 100%;
+}
+
+h1 {
+  /*the header for the page*/
+ font-family: helvetica, arial, sans-serif;
+  font-size: 91px;
+  font-weight: 500;
+}
+h2 {
+  /* just below the header*/
+  color: #dd3b2a;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 400;
+}
+h3 {
+  /*title for bodies*/
+  color: #dd3b2a;
+ font-family: helvetica, arial, sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.25em;
+  margin: 0.5em 0;
+}
+
+header {
+  /*header*/
+  margin: 0 auto;
+  max-width: 1040px;
+  position: relative;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+header h1 {
+  /*header characteristics and font*/
+  border-top: 50px solid #243447;
+  color: #c51f5d;
+  display: inline-block;
+  min-height: 70px;
+  margin: 10px auto 0;
+  padding: 0 10px;
+  z-index: 2;
+}
+header h1:after {
+  /*more header characteristics*/
+  background-color: #9c0000;
+  content: '';
+  height: 2px;
+  left: 0;
+  margin-top: -3px;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+header h2 {
+  /*header words position*/
+  text-align: right;
+  max-width: 695px;
+  margin: -10px auto 0;
+  width: 100%;
+}
+.summary {
+  /*the words after the header*/
+  position: relative;
+  max-width: 1040px;
+  margin: 80px auto 0;
+  width: 100%;
+  z-index: 2;
+}
+.summary p {
+  /*summery font settings*/
+  clear: right;
+  color: #dd3b2a;
+  float: right;
+  font-style: italic;
+  margin: 0;
+  width: 300px;
+}
+.summary p a:last-child {
+  white-space: nowrap;
+}
+
+.myDiv {
+  border: 5px outset #ff4da0;
+  background-color: white;
+  text-align: center;
+}
+
+.box {
+  border:5px outset green;
+  padding: 50px;
+  margin: 20px;
+}
+
+a{
+  color: #ff4da0;
+}
