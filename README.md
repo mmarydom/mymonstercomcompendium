@@ -1,4 +1,3 @@
-# mymonstercomcompendium
 
 # Project 1 Requirements
 
