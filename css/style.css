@@ -8,8 +8,9 @@ body {
   font-family: helvetica, arial, sans-serif;
   font-size: 16px;
   line-height: 1.25em;
-  background: #fff url(https://cdn.glitch.com/0a7178a1-99b8-4958-8e46-50955a57f845%2Frando.jpg?v=1614215674360) repeat fixed center;
-	background-color: #e5c9ff;
+  background: repeat fixed center;
+  /*  background: #fff url(https://cdn.glitch.com/0a7178a1-99b8-4958-8e46-50955a57f845%2Frando.jpg?v=1614215674360) repeat fixed center; */
+	background-color: #141d26;
   background-size: auto 100%;
 }
 
@@ -43,8 +44,8 @@ header {
   position: relative;
   text-align: center;
   top: 0;
-  width: 100%;
   z-index: 1;
+
 }
 header h1 {
   /*header characteristics and font*/
@@ -55,6 +56,7 @@ header h1 {
   margin: 10px auto 0;
   padding: 0 10px;
   z-index: 2;
+
 }
 header h1:after {
   /*more header characteristics*/
@@ -66,6 +68,7 @@ header h1:after {
   position: absolute;
   width: 100%;
   z-index: -1;
+
 }
 header h2 {
   /*header words position*/
@@ -73,6 +76,20 @@ header h2 {
   max-width: 695px;
   margin: -10px auto 0;
   width: 100%;
+}
+
+#content2 {
+  height:1000px;
+	background-color: #c51f5d;
+  padding: 145px;
+  margin-left: 100px;
+  width: 700px;
+  border-bottom: none;
+  border-top: none;
+	font-family: 'Concert One', cursive;
+  font-size: 20px;
+  position: relative;
+  border-radius: 25px;
 }
 .summary {
   /*the words after the header*/
@@ -85,7 +102,7 @@ header h2 {
 .summary p {
   /*summery font settings*/
   clear: right;
-  color: #dd3b2a;
+  color: #9c0000;
   float: right;
   font-style: italic;
   margin: 0;
@@ -95,17 +112,46 @@ header h2 {
   white-space: nowrap;
 }
 
+.navbar {
+  position: absolute;
+  bottom: -250px;
+  font-size: 16pt;
+  overflow: hidden; /* Hide overflow */
+  border-radius: 15px 15px 0px 0px;
+  transform: rotate(90deg);
+  margin-left: 69%;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left; /* Make sure that the links stay side-by-side */
+  background-color: #243447; /* Grey background color */
+  display: block; /* Change the display to block, for responsive reasons (see below) */
+  color: #c51f5d; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 14px 20px 14px; /* Add some padding */
+  text-decoration: none; /* Remove underline */
+  border-radius: 15px 15px 0px 0px;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right; /* Float a link to the right */
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+  background-color: 	#dbbcbc; /* Grey background color */
+  color: 	#243447; /* Black text color */
+  border-radius: 15px 15px 0px 0px;
+}
+
 .myDiv {
   border: 5px outset #ff4da0;
   background-color: white;
   text-align: center;
 }
 
-.box {
-  border:5px outset green;
-  padding: 50px;
-  margin: 20px;
-}
 
 a{
   color: #ff4da0;
