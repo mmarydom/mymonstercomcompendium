@@ -146,6 +146,19 @@ header h2 {
   border-radius: 15px 15px 0px 0px;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
 .myDiv {
   border: 5px outset #ff4da0;
   background-color: white;
