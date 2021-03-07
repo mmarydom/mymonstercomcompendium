@@ -1,6 +1,7 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap');
 
 body {
   /*affects the font of body*/
@@ -31,7 +32,7 @@ background-image:
 }
 h1 {
   /*the header for the page*/
- font-family: helvetica, arial, sans-serif;
+  font-family: helvetica, arial, sans-serif;
   font-size: 91px;
   font-weight: 500;
 }
@@ -42,10 +43,11 @@ h2 {
   font-style: italic;
   font-weight: 400;
 }
+
 h3 {
   /*title for bodies*/
   color: #dd3b2a;
- font-family: helvetica, arial, sans-serif;
+  font-family: helvetica, arial, sans-serif;
   font-size: 40px;
   font-weight: 500;
   line-height: 1.25em;
@@ -54,58 +56,123 @@ h3 {
 
 header {
   /*header*/
-  background-image: url("image/drip.png");
-  background-size: 1800px;
-  width:1663px;
-  height: 430px;
+  background-image: url("https://cdn.glitch.com/0a7178a1-99b8-4958-8e46-50955a57f845%2Fdrip.png?v=1615076414706");
+  background-size: 1650px;
+  width: 1242px;
+  height: 390px;
   position: relative;
   left:-7.5px;
   text-align: center;
   top: -8px;
   padding: 10px;
 }
+
 header h1 {
   /*header characteristics and font*/
-  font-family: 'Fascinate', cursive;
-   -webkit-text-stroke: 3px #e3e2bf;
-  font-size:100px;
+font-family: 'Fascinate', cursive;
+   -webkit-text-stroke: 2.5px #e3e2bf;
+  font-size:70px;
   color: #c51f5d;
-  margin: 20px auto 0;
+  margin: 5px auto 0;
   padding: 50px;
 }
 
 #content2 {
-  height:1000px;
+  height:600px;
 	background-color: #c51f5d;
   padding: 145px;
   margin-left: 100px;
   width: 700px;
-  border-bottom: none;
-  border-top: none;
-	font-family: 'Concert One', cursive;
-  font-size: 20px;
   position: relative;
+  top:-500px;
   border-radius: 25px;
+  margin-bottom:-500px;
 }
+
+.box {
+  font-family: 'Freckle Face', cursive;
+  background-color: #ffaf00;
+     -webkit-text-stroke: 1px #9c0000;
+  width: 500px;
+  padding: 1px 100px;
+  margin: -65px 10px;
+  border-radius: 25px;
+  color: #243447;
+    font-size: 35px;
+    text-align: center;
+   line-height: 50px;   /* within paragraph */
+}
+
 .summary {
   /*the words after the header*/
+ /* background-image: url("https://cdn.glitch.com/0a7178a1-99b8-4958-8e46-50955a57f845%2Fquote%20bubble.png?v=1615079336544");
+  background-repeat: no-repeat;
+  background-size: 400px;
+  background-position: 600px;               use this to decorate like with the stars                  */
   position: relative;
+  top: -400px;
+  left:-40px;
   max-width: 1040px;
   margin: 80px auto 0;
   width: 100%;
   z-index: 2;
 }
+
 .summary p {
   /*summery font settings*/
+  font-family: 'Freckle Face', cursive;
+  position: relative;
+  -webkit-text-stroke: .5px   #c51f5d;
+  top: 140px;
+  left: -90px;
   clear: right;
-  color: #9c0000;
+  color: 	#141d26;
   float: right;
-  font-style: italic;
+   text-align: center;
+  font-size:20px;
   margin: 0;
-  width: 300px;
+   display:flex;
+  background-color:#e3e2bf;
+  opacity: 0.8;
+  padding:20px;
+  border-radius:30px;
+  min-width:40px;
+  max-width:300px;
+  min-height:40px;
+  margin:20px;
+  position:relative;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
 }
-.summary p a:last-child {
-  white-space: nowrap;
+
+.summary p:before,
+.summary p:after {
+  content:"";
+  background-color:#e3e2bf;
+  border-radius:50%;
+  display:block;
+  position:absolute;
+  z-index:-1;
+}
+
+.summary p:before {
+  width:44px;
+  height:44px;
+  top:-12px;
+  left:28px;
+  box-shadow:-50px 30px 0 -12px #e3e2bf;
+}
+.summary p:after {
+  bottom:-10px;
+  right:26px;
+  width:30px;
+  height:30px;
+  box-shadow:40px -34px 0 0 #e3e2bf,
+             -28px -6px 0 -2px #e3e2bf,
+             -24px 17px 0 -6px #e3e2bf,
+             -5px 25px 0 -10px #e3e2bf;
+
 }
 
 .navbar {
@@ -120,6 +187,7 @@ header h1 {
 
 /* Style the navigation bar links */
 .navbar a {
+  font-family: 'Fascinate', cursive;
   float: left; /* Make sure that the links stay side-by-side */
   background-color: #243447; /* Grey background color */
   display: block; /* Change the display to block, for responsive reasons (see below) */
@@ -137,7 +205,7 @@ header h1 {
 
 /* Change color on hover/mouse-over */
 .navbar a:hover {
-  background-color: 	#dbbcbc; /* Grey background color */
+  background-color: #e3e2bf; /* Grey background color */
   color: 	#243447; /* Black text color */
   border-radius: 15px 15px 0px 0px;
 }
@@ -300,6 +368,22 @@ a{
   column-rule-style: solid;
 }
 
+.palm {
+    animation: sway1 16s infinite;
+    transform-origin: 50% 100% 0;
+}
+@keyframes sway1 {
+    0%, 100%{ transform: rotate(-8deg);}
+    50%{ transform: rotate(6deg); }
+}
 
+footer {
+   position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
 
-------------------------------
+}
