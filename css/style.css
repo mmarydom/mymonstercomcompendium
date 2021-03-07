@@ -33,16 +33,25 @@ background-image:
 }
 h1 {
   /*the header for the page*/
-  font-family: helvetica, arial, sans-serif;
+  font-family: 'Fascinate', cursive;
+     -webkit-text-stroke: 2.5px #e3e2bf;
+  color: #ffaf00;
   font-size: 91px;
-  font-weight: 500;
+  font-weight: 5px;
+    margin: 0.3em;
+    line-height: 0.0em;
+  /*margin-top:-50px;*/
+/*    position: relative;
+    top:-50px;*/
 }
 h2 {
-  /* just below the header*/
-  color: #c51f5d;
-  font-size: 22px;
-
-  font-weight: 400;
+  font-family: 'Fascinate', cursive;
+     -webkit-text-stroke: 2.5px #ffaf00;
+  color: 	#9c0000;
+  font-size: 91px;
+  font-weight: 5px;
+    margin: 0.3em;
+    line-height: 0.0em;
 }
 
 h3 {
@@ -82,10 +91,12 @@ font-family: 'Fascinate', cursive;
   height:600px;
 	background-color: #c51f5d;
   padding: 145px;
+  padding-top:50px;
+  padding-bottom:200px;
   margin-left: 100px;
   width: 700px;
   position: relative;
-  top:-500px;
+  top:-450px;
   border-radius: 25px;
   margin-bottom:-500px;
 }
@@ -104,6 +115,18 @@ font-family: 'Fascinate', cursive;
    line-height: 50px;   /* within paragraph */
 }
 
+.box2 {
+  font-family: 'Amatic SC', cursive;
+  background-color: #e3e2bf;
+  width: 500px;
+  padding: 50px 100px;
+  margin: -75px 10px;
+  border-radius: 25px;
+  color: #243447;
+    font-size: 25px;
+    text-align: center;
+   line-height: 30px;   /* within paragraph */
+}
 
 .summary {
   /*the words after the header*/
@@ -179,23 +202,25 @@ font-family: 'Fascinate', cursive;
 
 .navbar {
   position: absolute;
-  bottom: -150px;
+  bottom: -200px;
+  left:-10px;
   font-size: 16pt;
   overflow: hidden; /* Hide overflow */
   border-radius: 15px 15px 0px 0px;
   transform: rotate(90deg);
-  margin-left: 77.8%;
+ margin-left: 1000px;
 }
 
 /* Style the navigation bar links */
 .navbar a {
-  font-family: 'Fascinate', cursive;
+  font-family: 'Amatic SC', cursive;
+  font-size:45px;
   float: left; /* Make sure that the links stay side-by-side */
   background-color: #243447; /* Grey background color */
   display: block; /* Change the display to block, for responsive reasons (see below) */
   color: #c51f5d; /* White text color */
   text-align: center; /* Center the text */
-  padding: 14px 20px 14px; /* Add some padding */
+  padding: 20px 20px 70px; /* Add some padding */
   text-decoration: none; /* Remove underline */
   border-radius: 15px 15px 0px 0px;
 }
