@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Ravi+Prakash&display=swap');
 body {
   /*affects the font of body*/
   color: #0f2a36;
@@ -39,16 +39,16 @@ h1 {
 }
 h2 {
   /* just below the header*/
-  color: #dd3b2a;
+  color: #c51f5d;
   font-size: 22px;
-  font-style: italic;
+
   font-weight: 400;
 }
 
 h3 {
   /*title for bodies*/
-  color: #dd3b2a;
-  font-family: helvetica, arial, sans-serif;
+  color: #c51f5d;
+  font-family: 'Ravi Prakash', cursive;
   font-size: 40px;
   font-weight: 500;
   line-height: 1.25em;
@@ -257,7 +257,7 @@ a{
   background-color: #243447;
   margin: auto;
   padding: 0;
-  border: 1px solid #888;
+  border: 2.5px solid #ffaf00;
   width: 80%;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   -webkit-animation-name: animatetop;
@@ -294,15 +294,19 @@ a{
 
 .modal-header {
   padding: 2px 16px;
-  color: white;
+ color: white;
 }
 
 .modal-body {
   font-family: 'Amatic SC', cursive;
+  color:#e3e2bf;
   padding: 2px 16px;
-  height: 90vh;
+  height: 135vh;
 overflow-y: hidden;
 padding-right: 15px;
+font-size: 30px;
+text-align: center;
+line-height: 30px;
 }
 
 .modal-open {
