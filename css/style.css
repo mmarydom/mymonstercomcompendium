@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
 
 body {
   /*affects the font of body*/
@@ -47,7 +48,7 @@ h2 {
 h3 {
   /*title for bodies*/
   color: #dd3b2a;
-  font-family: helvetica, arial, sans-serif;
+  font-family: 'Amatic SC', cursive;
   font-size: 40px;
   font-weight: 500;
   line-height: 1.25em;
@@ -95,13 +96,14 @@ font-family: 'Fascinate', cursive;
      -webkit-text-stroke: 1px #9c0000;
   width: 500px;
   padding: 1px 100px;
-  margin: -65px 10px;
+  margin: -75px 10px;
   border-radius: 25px;
   color: #243447;
     font-size: 35px;
     text-align: center;
    line-height: 50px;   /* within paragraph */
 }
+
 
 .summary {
   /*the words after the header*/
@@ -177,12 +179,12 @@ font-family: 'Fascinate', cursive;
 
 .navbar {
   position: absolute;
-  bottom: -250px;
+  bottom: -150px;
   font-size: 16pt;
   overflow: hidden; /* Hide overflow */
   border-radius: 15px 15px 0px 0px;
   transform: rotate(90deg);
-  margin-left: 69%;
+  margin-left: 77.8%;
 }
 
 /* Style the navigation bar links */
