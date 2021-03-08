@@ -57,7 +57,8 @@ h2 {
 h3 {
   /*title for bodies*/
   color: #c51f5d;
-  font-family: 'Ravi Prakash', cursive;
+  font-family: 'Freckle Face', cursive;
+       -webkit-text-stroke: 1.0px #ffaf00;
   font-size: 40px;
   font-weight: 500;
   line-height: 1.25em;
@@ -262,6 +263,81 @@ a{
 }
 
 /* The Modal (background) */
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #243447;
+    font-family: 'Amatic SC', cursive;
+  color: #e3e2bf;
+  font-size: 25px;
+  padding: 16px 32px;
+}
+
+#myImg1 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg1:hover {opacity: 0.7;}
+
+#myImg2 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg2:hover {opacity: 0.7;}
+
+#myImg3 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg3:hover {opacity: 0.7;}
+
+#myImg4 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg4:hover {opacity: 0.7;}
+
+
+/* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -273,74 +349,51 @@ a{
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
 
-/* Modal Content */
+/* Modal Content (image) */
 .modal-content {
-  position: relative;
-  background-color: #243447;
   margin: auto;
-  padding: 0;
-  border: 2.5px solid #ffaf00;
+  display: block;
   width: 80%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s
+  max-width: 700px;
 }
 
 /* Add Animation */
-@-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:0; opacity:1}
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
 }
 
-@keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:0; opacity:1}
+@keyframes zoom {
+  from {transform: scale(0.1)}
+  to {transform: scale(1)}
 }
 
 /* The Close Button */
 .close {
-  color: white;
-  float: right;
-  font-size: 28px;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
   font-weight: bold;
+  transition: 0.3s;
 }
 
 .close:hover,
 .close:focus {
-  color: #000;
+  color: #bbb;
   text-decoration: none;
   cursor: pointer;
 }
 
-.modal-header {
-  padding: 2px 16px;
- color: white;
-}
-
-.modal-body {
-  font-family: 'Amatic SC', cursive;
-  color:#e3e2bf;
-  padding: 2px 16px;
-  height: 135vh;
-overflow-y: hidden;
-padding-right: 15px;
-font-size: 30px;
-text-align: center;
-line-height: 30px;
-}
-
-.modal-open {
-  height: 100vh;
-  overflow-y: hidden;
-}
-.modal-footer {
-  padding: 2px 16px;
-  color: white;
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
 }
 
 .palm {
@@ -350,4 +403,13 @@ line-height: 30px;
 @keyframes sway1 {
     0%, 100%{ transform: rotate(-8deg);}
     50%{ transform: rotate(6deg); }
+}
+
+button {
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
 }
